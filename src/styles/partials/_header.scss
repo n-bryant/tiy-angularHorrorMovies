@@ -1,0 +1,38 @@
+header {
+    align-items: center;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $vspace;
+    padding: $vspace $hspace;
+}
+
+h1 {
+    color: #fff;
+    font: 2.5rem/1 $primaryFont, serif;
+    text-transform: uppercase;
+
+    span {
+        color: #900;
+        font-family: $secondaryFont;
+    }
+}
+
+.nav-container {
+    display: flex;
+
+    li {
+        background: #000;
+        color: #ccc;
+        cursor: pointer;
+        padding: $vspace $hspace;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+
+        &.active,
+        &:hover {
+            background: #900;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// ------ Global Imports ------ //
+@import 'partials/globals/variables';
+@import 'partials/globals/reset';
+@import 'partials/globals/mixins';
+
+// ------- Site Imports ------- //
+@import 'partials/common';
+@import 'partials/header';
+@import 'partials/movie-preview';
+@import 'partials/movie-full';
+
+// ------ Site Modifiers ------ //
+@import 'partials/modifiers';

@@ -1,0 +1,22 @@
+.movie-preview {
+    display: flex;
+    justify-content: space-between;
+    padding: $vspace $hspace;
+
+    img {
+      cursor: pointer;
+        max-height: 200px;
+    }
+
+    .preview-details-container {
+        padding: 0 $hspace;
+    }
+
+    h2 {
+        font: 2rem/2 $secondaryFont;
+    }
+
+    &:nth-child(even) {
+        background: #ddd;
+    }
+}

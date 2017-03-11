@@ -1,0 +1,26 @@
+body {
+    background: #ececec;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p {
+    margin: $vspace 0;
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: #900;
+}
+
+h3 {
+    color: #900;
+    font: 2rem/2 $secondaryFont;
+}

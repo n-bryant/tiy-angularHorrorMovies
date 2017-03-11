@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="MoviesApp">
+    <head>
+        <meta charset="utf-8">
+        <title>31 Nights of Horror</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Open+Sans:400">
+        <link rel="stylesheet" href="lib/styles/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><span>31</span> Nights of Horror</h1>
+                <nav>
+                    <ul class="nav-container">
+                        <!-- using ui-router to set active class on nav items, and update state url -->
+                        <li ui-sref-active="active" ui-sref="MoviesParent.index">Home</li>
+                        <li ui-sref-active="active" ui-sref="MoviesParent.list">Movie List</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="content-container">
+                  <ui-view></ui-view>
+                </div>
+            </main>
+        </div>
+        <script src="lib/js/vendor/vendor.min.js"></script>
+        <script src="lib/js/app.js"></script>
+    </body>
+</html>

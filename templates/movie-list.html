@@ -1,0 +1,9 @@
+<section class="movie-previews-container">
+    <div ng-repeat="movie in listCtrl.allMovies" class="movie-preview">
+        <img ui-sref="MoviesParent.details({id: movie.imdb})" ng-src="http://danyuschick.com/31-nights-of-horror/assets/images/posters/{{movie.image}}" alt="{{movie.title}}">
+        <div class="preview-details-container">
+            <h2>{{movie.title}} {{movie.year}}</h2>
+            <p>{{movie.summary}} <a ui-sref="MoviesParent.details({id: movie.imdb})">Read More</a></p>
+        </div>
+    </div>
+</section>
